@@ -1,0 +1,15 @@
+services:
+  haejoong.com-api-go:
+    container_name: haejoong.com-api-go # 마이그레이션이 끝나면 haejoong.com-api로 변경
+    build: .
+    expose:
+      - 8080
+    volumes:
+      - ./logs:/app/logs
+    env_file:
+      - .env
+    restart: "always"
+
+networks:
+  haejoong.com-network:
+    external: true
