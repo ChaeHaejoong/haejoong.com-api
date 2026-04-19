@@ -1,0 +1,9 @@
+services:
+  haejoong.com-api-go:
+    container_name: haejoong.com-api-go-dev
+    build:
+      target: dev
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"

@@ -1,15 +1,15 @@
 ## 인프라
 - [x] Docker + Air + Log Volume 세팅
-- [ ] PostgreSQL 연동 및 Gorm 설정
-- [ ] Redis 컨테이너 추가 및 Go 클라이언트(go-redis) 연동
-- [ ] Redis 기반 캐싱/세션 전략 수립 (TTL 정책 등)
+- [x] PostgreSQL 연동 및 Gorm 설정
+- [x] Redis 연동
+- [x] Redis 기반 캐싱/세션 전략 수립 (TTL 정책 등)
+- [x] 구조화된 로깅(Structured Logging) 적용 (zap 또는 slog 활용)
 
 ## Phase 1: Auth & Middleware
 - [ ] JWT 인증 미들웨어 구현 (Access/Refresh)
 - [ ] Refresh Token 쿠키 정책 구현 (httpOnly, secure, sameSite, maxAge)
 - [ ] 공통 에러 핸들러 및 JSON 응답 구조 설계
 - [ ] 인증/인가 미들웨어 체인 설계 (Optional Auth 포함)
-- [ ] 구조화된 로깅(Structured Logging) 적용 (zap 또는 slog 활용)
 - [ ] 요청 단위 로깅/트레이싱 미들웨어 추가
 
 ### Endpoints (Auth)
