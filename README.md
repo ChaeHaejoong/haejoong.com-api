@@ -21,7 +21,6 @@ NestJS의 각 요소를 Go의 특성에 맞춰 아래처럼 매핑하여 구현
 - **Server**: GMKtec G6 (Ryzen 5425U / 32GB RAM / Ubuntu) **< 홈서버**
 - **Runtime**: Docker Compose
 - **Dev Tool**: [Air](https://github.com/air-verse/air) (Hot Reload)
-- **Log Path**: `./logs/api.log`
 
 ---
 
