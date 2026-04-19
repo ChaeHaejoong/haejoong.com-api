@@ -1,0 +1,6 @@
+services:
+  haejoong.com-api-go:
+    build:
+      target: dev
+    volumes:
+      - .:/app

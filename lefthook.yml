@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    fmt:
+      glob: "*.go"
+      run: go fmt ./... && git add {staged_files}
+
+    vet:
+      glob: "*.go"
+      run: go vet ./...
+
+    tidy:
+      run: go mod tidy && git add go.mod go.sum
