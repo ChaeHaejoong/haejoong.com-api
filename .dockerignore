@@ -1,13 +1,11 @@
 README.md
+Makefile
+docker-compose.yml
+docker-compose.dev.yml
 
-docs
-logs
-tmp
+docs/
 
-.git
+.git/
 .gitignore
 
-.env
-.env.example
-
-.docker-compose.yml
+.env*
